@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Author: Joseph Kreifels II -->
+<!--- Date: 12/29/2023 -->
+
+<head>
+<meta charset="utf-8">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css" />
+<style></style>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#201F20">
+<meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#">
+<meta name="theme-color" content="#201F20"/>
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=no" />
+<title>javascript-messages</title>
+</head>
+<body>
+
+<main id="screen">
+
+    <header id="appbar" class="noSelect">
+        <img id="btnBack" class="appbar-btn" src="img/btnBack.png" onclick="backButton()"/>
+        <div id="appbar-name">
+            Loading...
+        </div>
+       <img id="btnOptions" class="appbar-btn"  src="img/btnOptions.png" onclick="optButton()"/>
+    </header>
+
+    <!-- PAGE 0 :  LOADING -->
+    <section id="page-Loading" class="screen-container">
+        
+    </section>
+
+    <!-- PAGE 5 :  LOG IN -->
+    <section id="page-Login" class="screen-container hidden">
+        <br />
+        <form id="loginForm">  
+            <fieldset>
+            <legend>Username:</legend>
+                <input rows="1" class="txtInputBox" id="txtUsername" name="Username" autocomplete="off" autofill="off"  placeholder="" maxlength="30">
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Password:</legend>
+                    <input type="password" class="txtInputBox" id="txtPassword" name="Password" autocomplete="off" autofill="off"  placeholder="" maxlength="30">
+            </fieldset>
+
+            <br />
+            <button id="btnLogin">LOGIN</button>
+        </form>        
+    </section>
+
+
+    <!-- PAGE 1 :  CHAT SELECT -->
+    <section id="page-Messages" class="screen-container noSelect hidden">
+
+        <!--
+            List of contacts will be populated here
+        -->
+    </section>
+
+
+    <!-- PAGE 2 :  CHAT MESSAGE -->
+    <section id="page-Chat" class="screen-container hidden">
+       
+        <div id="chat-container" class="">
+            <!-- chat bubbles will be displayed here -->
+       <!--
+            <div class="message friend-message">Hey joe, how's it going!</div>
+            <div class="message user-message">Great. Check out this mobile chat web-app!</div>
+            <div class="message friend-message">This is awesome. Check this out Lorem ipsum dolor sit amet, consectetur adipiscing elit!</div>
+            <div class="message user-message">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</div>
+            <div class="message friend-message">Woah! WOAH!!</div>
+            <div class="message friend-message">That's a lot of text!</div>
+            <div class="message user-message">😉</div>
+        -->
+        </div>
+    
+        <div id="textboxAndButton">
+            <textarea rows="1" id="userInput" class="chat-input" autocomplete="off" autofill="off"  placeholder="Enter Message"></textarea>
+            <img id="btnSendMessage" class="noSelect" src="img/btnSend.png" onclick="sendMessage()"/>
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 3 :  CHAT PROFILE -->
+    <section id="page-Profile" class="noSelect hidden">
+        <!-- The current contacts bio/profile page -->
+        <img id="profile-image" src=""  />
+        
+        <div id="profile-bio">
+            
+        </div>
+    </section>
+
+
+
+    <!-- PAGE 4 :  OPTIONS  -->
+
+    <section id="page-Options" class="screen-container noSelect hidden">
+        <!-- Add in your own settings or get rid of this entirely. -->
+
+        
+            <br />
+            <form id="optionForm">
+                <fieldset>
+                <legend>Your Name:</legend>
+                    <input class="txtInputBox" id="txtAlias" name="alias" autocomplete="off" autofill="off"  placeholder="" maxlength="30">
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Your Preference:</legend>
+                    <div>
+                      <input type="radio" id="optPrefA" name="optPref" value="A" checked />
+                      <label for="optPrefA">Some option A</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="optPrefB" name="optPref" value="B" />
+                      <label for="optPrefB">Some option B</label>
+                    </div>
+                </fieldset>
+                <br />
+                <!--<button id="btnSaveSettings">SAVE</button>-->
+            </form>
+       
+    </section>
+
+</main>
+
+
+</body>
+<script src="js/script.js"></script>
+</html>

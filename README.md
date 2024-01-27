@@ -1,4 +1,4 @@
-![Image Alt text](/images/screen2.png
+![Image Alt text](/images/screen2.png)
 
 
 I haven't been able to find something like this already made, so I'm releasing one I created. This is pure HTML/CSS/Javascript. It does not require any fancy things like NodeJS, React, Vue, etc. Main goal is to be compatible with LAMP stack.
@@ -22,9 +22,9 @@ See this hosted (as is): https://jkdos.com/github/samples/javascript-messages
 Live Implementation: https://jkdos.com/chat  (Bring your own keys)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-![Image Alt text](/images/screen1.png
-![Image Alt text](/images/screen3.png
-![Image Alt text](/images/screen4.png
+![Image Alt text](/images/screen1.png)
+![Image Alt text](/images/screen3.png)
+![Image Alt text](/images/screen4.png)
 
 Special thanks:
 

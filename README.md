@@ -8,7 +8,8 @@ This is front-end GUI and code only! This does not include any real functionalit
 I did not implement the login screen, but it's there, and can be called like any other screen. I have it working in my PWA.
 The settings have no valid use in this demo.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 This is intended to run as a PWA (Progressive Web App) on smartphones. To activate PWA mode on your smartphone, it takes 3 steps.
 
 1. Visit the page on your smartphone
@@ -19,8 +20,10 @@ In doing so, the page will will operate in a simular fashion to an app. It will 
 
 
 See this hosted (as is): https://jkdos.com/github/samples/javascript-messages 
+
 Live Implementation: https://jkdos.com/chat  (Bring your own keys)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ![Image Alt text](/images/screen1.png)
 ![Image Alt text](/images/screen3.png)
